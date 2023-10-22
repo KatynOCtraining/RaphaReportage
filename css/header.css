@@ -8,6 +8,10 @@ header img {
   height: 60px;
 }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
 .banner {
   height: 300px;
   width: 100%;
@@ -19,4 +23,19 @@ header img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 25%;
+  background: whitesmoke;
+  border-radius: 20px 20px 5px 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5px;
+}
+.cardimg {
+  box-sizing: border-box;
 }/*# sourceMappingURL=header.css.map */

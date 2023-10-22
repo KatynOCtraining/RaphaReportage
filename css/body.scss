@@ -8,6 +8,7 @@ $grey:  #D3D3D3;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .article{
@@ -15,13 +16,24 @@ $grey:  #D3D3D3;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+
+  
 }
 
 article{
     background-color: $grey;
     border-radius: 20px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
 
+.section_title{
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid $gold;
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 5px -5px $blue;
+    color: $gold;
 }
 
 .dossier{
@@ -36,3 +48,5 @@ article{
     border-radius: 20px;
     padding: 10px;
 }
+
+

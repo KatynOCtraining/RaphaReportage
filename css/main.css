@@ -17,6 +17,10 @@ header img {
   height: 60px;
 }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
 .banner {
   height: 300px;
   width: 100%;
@@ -28,6 +32,24 @@ header img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 25%;
+  background: whitesmoke;
+  border-radius: 20px 20px 5px 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5px;
+}
+.card h3 {
+  border-bottom: 2px solid #2FAEE0;
+}
+.cardimg {
+  box-sizing: border-box;
 }
 
 /*Reset*/
@@ -45,6 +67,7 @@ body {
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .article {
@@ -52,12 +75,22 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 }
 
 article {
   background-color: #D3D3D3;
   border-radius: 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section_title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #BEA064;
+  padding-bottom: 10px;
+  box-shadow: 0px 5px 5px -5px #2FAEE0;
+  color: #BEA064;
 }
 
 .dossier {
@@ -78,4 +111,86 @@ article {
 }
 .article_right_footer {
   color: #BEA064;
+}
+
+.dossier h3 {
+  color: #2FAEE0;
+}
+
+footer {
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer a {
+  text-decoration: none;
+  color: #2FAEE0;
+}
+footer a i {
+  font-size: 30px;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgb(47, 174, 224) 0%, rgb(255, 255, 255) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: hideDiv 2s forwards;
+  z-index: 3;
+}
+.box .shadow {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: grey;
+  bottom: 0;
+  border-radius: 100%;
+  transform: scaleX(0.8);
+  opacity: 0.6;
+  animation: shadowScale 1s linear infinite;
+}
+
+.gravity {
+  width: 40px;
+  height: 40px;
+  animation: bounce 1s cubic-bezier(0.68, 0.35, 0.29, 0.54) infinite;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/activity-5/50/26BD-soccer-ball-128.png");
+  background-size: cover;
+  animation: roll 0.7s linear infinite;
+}
+
+@keyframes roll {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bounce {
+  50% {
+    transform: translateY(100px);
+  }
+}
+@keyframes shadowScale {
+  50% {
+    transform: scaleX(1);
+    opacity: 0.8;
+  }
+}
+@keyframes hideDiv {
+  to {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
