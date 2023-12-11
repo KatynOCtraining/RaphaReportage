@@ -207,4 +207,15 @@ footer a i {
     width: 90%;
     margin: 0 auto;
   }
+  .card {
+    width: 75%;
+    top: 130px;
+    left: 11%;
+    height: 200px;
+  }
+  .card img {
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=main.css.map */
