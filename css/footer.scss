@@ -1,21 +1,19 @@
-footer{
-    background-color: darkgray;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+footer {
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  padding: 20px;
 
-    a{
-        text-decoration: none;
-        color:$blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-        i{
-            font-size: 30px;
-        }
+  a {
+    text-decoration: none;
+    color: #2faee0;
+
+    i {
+      font-size: 30px;
     }
-
-
+  }
 }

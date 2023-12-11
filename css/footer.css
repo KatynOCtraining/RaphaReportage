@@ -3,4 +3,14 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer a {
+  text-decoration: none;
+  color: #2faee0;
+}
+footer a i {
+  font-size: 30px;
 }/*# sourceMappingURL=footer.css.map */

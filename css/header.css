@@ -36,6 +36,9 @@ h1 {
   flex-direction: column-reverse;
   padding: 5px;
 }
+.card h3 {
+  border-bottom: 2px solid #2faee0;
+}
 .cardimg {
   box-sizing: border-box;
 }/*# sourceMappingURL=header.css.map */
